@@ -1,0 +1,113 @@
+@font-face {
+    font-family:Pixtile;
+    src: url(/Pixtile-jEPr9.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--BuPz-p40--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nphrgz8yfnjylrwfr0yl.png);
+}
+
+.calculadora-js {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#calculadora {
+  height:100px; 
+  width:100px;
+}
+
+#p_1 {
+    font-family: Pixtile;
+    font-size: 2rem;
+    color: white;
+}
+
+.calculate {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.inputFields {
+    margin: 15px 0;
+    font-size: 16px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid rgba(10, 180, 180, 1);
+    background: rgba(255, 255, 255, 0.055);
+    color: white;
+    outline: none;
+  }
+
+  .espacos {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .operation {
+    display: flex;
+    justify-content: center;
+  }
+
+  #p_2 {
+    font-size: 3rem;
+    color:white;
+  }
+
+  .result {
+    display: flex;
+    justify-content: center;
+  }
+
+  .botao {
+    width: 100px;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.329);
+    color: black;
+  }
+
+  .botao:hover {
+    background-color:rgba(255, 255, 255, 0.700);
+  }
+
+  .botao:active {
+      background-color: rgba(255, 255, 255, 0.900);
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    @media only screen and (max-width: 600px) {
+      .botao {
+        width: 50px;
+
+    }
+
+    .inputFields {
+      width: 125px;
+    }
+
+    #p_2 {
+      font-size:2rem;
+    }
+
+    .espacos {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    #calculadora {
+      height:50px; 
+      width:50px;
+    }
+
+    #p_1 {
+        font-size: 1.5rem;
+        color: white;
+    }
+  }

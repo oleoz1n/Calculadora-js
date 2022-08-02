@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="calculadora-js">
+            <object data="/svgs/calculadora-icon.svg" id="calculadora"></object>
+        <p id="p_1"><strong>Calculadora js</strong></p>
+        </div>
+    </header>
+    <section>
+        <div class="calculate">
+            <div class="espacos"><input type="number" name="number1" class="inputFields" id="number1" onchange="capturar()"></div>
+            <div class="espacos"><input type="number" name="number2" class="inputFields" id="number2" onchange="capturar()"></div>
+        </div>
+        <div class="operation">
+            <div class="mais"><button class="botao" style="border-top-left-radius:25%;border-bottom-left-radius:25%;" onclick="soma()" type="submit">+</button></div>
+            <div class="menos"><button class="botao"onclick="menos()" style="height:43px;">-</button></div>
+            <div class="vezes"><button class="botao" style="height:43px;" onclick="vezes()">x</button></div>
+            <div class="dividir"><button class="botao" style="border-top-right-radius:25%;border-bottom-right-radius:25%;" onclick="dividir()" >/</button></div>
+        </div>
+        <div class="result">
+            <p id="p_2"></p>
+        </div>
+    </section>
+    <script src="/script.js"></script>
+</body>
+</html>
